@@ -1,3 +1,5 @@
-h1 Books#index
-p Find me in app/views/books/index.html.slim
+h1 本の一覧
+- @books.each do |book|
+  = book.name
+br
 = link_to 'ホーム', root_path
